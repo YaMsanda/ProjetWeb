@@ -1,0 +1,20 @@
+doctype html
+html
+    include includes/head.pug
+    case activePage
+            when 'search'
+                include assets/css/searchStyle.pug
+            when 'accueil'
+                include assets/css/accueilStyle.pug
+            default
+                include assets/css/accueilStyle.pug
+    include includes/header.pug
+    
+    main
+        case activePage
+            when 'search'
+                include includes/search.pug
+            when 'accueil'
+                include includes/accueil.pug
+            default
+                include includes/accueil.pug

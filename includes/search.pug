@@ -1,0 +1,14 @@
+- var results = {1:"Resultat #1", 2:"Resultat #2",3:"Resultat #3",4:"Resultat #4",5:"Resultat #5",6:"Resultat #6",7:"Resultat #6",8:"Resultat #6",9:"Resultat #6",10:"Resultat #6",11:"Resultat #6",12:"Resultat #6",13:"Resultat #6",14:"Resultat #6",15:"Resultat #6",16:"Resultat #6",17:"Resultat #6",18:"Resultat #6",19:"Resultat #6",20:"Resultat #6",21:"Resultat #6",22:"Resultat #6",23:"Resultat #6",24:"Resultat #6",25:"Resultat #6",26:"Resultat #6",27:"Resultat #6",28:"Resultat #6",29:"Resultat #6",30:"Resultat #6",}
+
+div#searchResultDiv
+    div#filterDiv
+        div.spacerDiv
+        span Filtres actifs :
+        p Département: #{searchDept} / Type de bien: #{searchTypeBien}
+        p Type d'achat: #{searchTypeAchat} / Ville: #{searchVille}
+    div#gridDiv
+        div.spacerDiv
+        each result in results
+            div#resultDiv
+                img(src="/assets/img/background.png", alt="Photo de la propriété")
+                span #{result}
