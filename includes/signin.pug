@@ -1,0 +1,18 @@
+div#signinBigDiv
+    h2 Connexion :
+    form(action="/signedin/" method="post")
+        
+        input(type="text", id="signinMail", name="signin[mail_client]")
+
+        input(type="password", id="signinPass", name="signin[pass_client]")
+        
+        input(type="submit", value="Valider", id="submitButton")
+
+script.
+    $.ajax({
+        data: { value: $('#signinMail').val() },
+        method: "POST",
+        success: (data) => {
+            console.log(data)
+        }
+    });
