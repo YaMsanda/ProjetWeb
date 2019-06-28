@@ -1,0 +1,17 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "root",
+  "password": "",
+  "database": "projet_transv",
+  "synchronize": true,
+  "dropSchema": false,
+  "logging": true,
+  "entities": ["src/**/*.entity.ts"],
+  "migrations": ["src/migration/**/*.ts"],
+  "default": true,
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}
