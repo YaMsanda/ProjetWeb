@@ -1,0 +1,26 @@
+div#addBienBigDiv
+    h2 Ajout d'un bien :
+    form(action="/addedBien/" method="post")
+        
+        input(type="text", id="addBienNom", name="addBien[nom]", placeholder="Nom du bien")
+        <br>
+        input(type="val", id="addBienSurfaceHab", name="addBien[surfacehab]", placeholder="Surface habitable en m2")
+        <br>
+        input(type="val", id="addBienSurfaceTotale", name="addBien[surfacetotale]", placeholder="Surface totale en m2")
+        <br>
+        input(type="val", id="addBienNbrePieces", name="addBien[nbrepieces]", placeholder="Nombre total de pièces")
+        <br>
+        input(type="val", id="addBienPrix", name="addBien[prix]", placeholder="Prix du bien")
+        <br>
+        input(type="text", id="addBienDesc", name="addBien[desc]", placeholder="Description du bien")
+        <br>
+        input(type="submit", value="Valider", id="submitButton")
+
+script.
+    $.ajax({
+        data: { value: $('#addBien').val() },
+        method: "POST",
+        success: (data) => {
+            console.log(data)
+        }
+    });

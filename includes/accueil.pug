@@ -2,13 +2,12 @@
 - typesBiens = {1: "Appartement", 2: "Maison", 3: "T1", 4: "T1*", 5: "T2", 6: "T3", 7: "T4", 8: "T5", 9: "T6", 10: "T7"}
 - typesAchats = {1: "Achat", 2: "Location"}
 div#accueilSearchDiv
-    h2 Cherchez votre futur bien :
     form(action="/search/" method="post")
         select#selectDept(name="search[dept]")
             each dept in depts
                 option(value=dept) #{dept}
         
-        input(type="text", id="searchBarVille", name="search[ville]")
+        input(type="text", id="searchBarVille", name="search[ville]", placeholder="Ville")
 
         select#selectType(name="search[typeBien]")
             each typeBien in typesBiens
@@ -19,6 +18,10 @@ div#accueilSearchDiv
                 option(value=typeAchat) #{typeAchat}
         
         input(type="submit", value="Valider", id="submitButton")
+div#accueilTextDiv 
+    h2 Bienvenue dans votre agence immobilière
+    hr
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores obcaecati similique sunt corporis illo. Esse mollitia totam quidem et accusamus laboriosam ipsa fugit praesentium voluptas provident error, eius cumque odio! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, inventore! Voluptates dolores, quidem laudantium tenetur similique rem, ex dolorum et fugit illo dolore ea beatae iure repudiandae pariatur? Adipisci, autem!
 
 script.
     $.ajax({

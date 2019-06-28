@@ -14,6 +14,24 @@ app.get('/accueil', function (req, res) {
     }));
 })
 
+app.get('/signin', function (req, res) {
+    res.send(pug.renderFile('template.pug', {
+        activePage: 'signin'
+    }));
+})
+
+app.get('/addbien', function (req, res) {
+    res.send(pug.renderFile('template.pug', {
+        activePage: 'addbien'
+    }));
+})
+
+app.get('/contact', function (req, res) {
+    res.send(pug.renderFile('template.pug', {
+        activePage: 'contact'
+    }));
+})
+
 app.post('/search/', (req, res) => {
     res.send(pug.renderFile('template.pug', {
         activePage: 'search',

@@ -6,6 +6,14 @@ html
                 include assets/css/searchStyle.pug
             when 'accueil'
                 include assets/css/accueilStyle.pug
+            when 'signin'
+                include assets/css/signinStyle.pug
+            when 'signedin'
+                include assets/css/signedinStyle.pug
+            when 'addbien'
+                include assets/css/addbienStyle.pug
+            when 'contact'
+                include assets/css/contactStyle.pug
             default
                 include assets/css/accueilStyle.pug
     include includes/header.pug
@@ -20,5 +28,9 @@ html
                 include includes/signin.pug
             when 'signedin'
                 include includes/signedin.pug
+            when 'addbien'
+                include includes/addbien.pug
+            when 'contact'
+                include includes/contact.pug
             default
                 include includes/accueil.pug

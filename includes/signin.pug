@@ -2,9 +2,9 @@ div#signinBigDiv
     h2 Connexion :
     form(action="/signedin/" method="post")
         
-        input(type="text", id="signinMail", name="signin[mail_client]")
+        input(type="text", id="signinMail", name="signin[mail_client]", placeholder="mail@exemple.com")
 
-        input(type="password", id="signinPass", name="signin[pass_client]")
+        input(type="password", id="signinPass", name="signin[pass_client]", placeholder="Mot de passe")
         
         input(type="submit", value="Valider", id="submitButton")
 
