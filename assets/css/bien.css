@@ -1,0 +1,43 @@
+#bienBigDiv{
+    width: 50vw;
+    height: 90vh;
+    background-color: rgb(70, 70, 70);
+    margin-top: 5vh;
+    margin-left: 15vw;
+    padding-top: 2vh;
+}
+
+#bienBigDiv img{
+    width: 50%;
+    height:50%;
+    margin-top: 1vh;
+    margin-left: 12vw;
+}
+#bienBigDiv img:hover{
+    width: 60%;
+    height:60%;
+    margin-top: 0.5vh;
+    margin-left: 10vw;
+}
+
+#bienBigDiv img:hover ~ #bienDetails p:nth-child(6){
+    font-size: 0.8em;
+}
+
+#bienBigDiv a{
+    margin-top: 2vh;
+    margin-left: 20vw;
+    color: #fff;
+    font-size: 2em;
+}
+
+#bienDetails p{
+    color:rgb(200, 200, 200);
+    font-size: 1.2em;
+    margin-left: 1vw;
+    text-overflow: clip;
+}
+
+#bienDetails p:nth-child(6){
+    font-size: 0.9em;
+}

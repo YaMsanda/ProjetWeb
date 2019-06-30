@@ -1,4 +1,4 @@
-- var results = {1:"Resultat #1", 2:"Resultat #2",3:"Resultat #3",4:"Resultat #4",5:"Resultat #5",6:"Resultat #6",7:"Resultat #6",8:"Resultat #6",9:"Resultat #6",10:"Resultat #6",11:"Resultat #6",12:"Resultat #6",13:"Resultat #6",14:"Resultat #6",15:"Resultat #6"}
+- var results = {1:"Resultat #1", 2:"Resultat #2",3:"Resultat #3",4:"Resultat #4",5:"Resultat #5",6:"Resultat #6",7:"Resultat #7",8:"Resultat #8",9:"Resultat #9",10:"Resultat #10",11:"Resultat #11",12:"Resultat #12",13:"Resultat #13",14:"Resultat #14",15:"Resultat #15"}
 
 div#searchResultDiv
     div#filterDiv
@@ -9,5 +9,6 @@ div#searchResultDiv
         div.spacerDiv
         each result in results
             div#resultDiv
-                img(src="/assets/img/background.jpg", alt="Photo de la propriété")
+                a(href="/bien")
+                    img(src="/assets/img/background.jpg", alt="Photo de la propriété")
                 span #{result}

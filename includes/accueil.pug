@@ -2,6 +2,7 @@
 - typesBiens = {1: "Appartement", 2: "Maison", 3: "T1", 4: "T1*", 5: "T2", 6: "T3", 7: "T4", 8: "T5", 9: "T6", 10: "T7"}
 - typesAchats = {1: "Achat", 2: "Location"}
 div#accueilSearchDiv
+    h2 Cherchez votre futur bien !
     form(action="/search/" method="post")
         select#selectDept(name="search[dept]")
             each dept in depts

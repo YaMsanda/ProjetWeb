@@ -1,20 +1,18 @@
 body
     header  
         div(id='bigMenu')
-            img(src=logoImmoUrl,
-                alt='Logo ImmoConceptPlus')
+            a(href="/accueil")
+                img(src=logoImmoUrl,alt='Logo ImmoConceptPlus')
             ul(id='menuList')
                 li
                     a(href="/accueil") Accueil
                 li
-                    a(href="") Ventes
-                li
-                    a(href="") Locations
-                li
                     a(href="/addbien") Ajout d'un bien
-                li
-                    a(href="/contact") Contact
                 li
                     a(href="/signin") Connexion
                 li
                     a(href="/signup") Inscription
+                li
+                    a(href="/contact") Contact
+                li
+                    a(href="/mentions") Mentions Légales

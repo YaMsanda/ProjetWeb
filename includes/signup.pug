@@ -1,0 +1,20 @@
+div#signupBigDiv
+    h2 Inscription :
+    form(action="/signedin/" method="post")
+        
+        input(type="text", id="signinMail", name="signin[mail_client]", placeholder="mail@exemple.com")
+
+        input(type="password", id="signinPass", name="signin[pass_client]", placeholder="Mot de passe")
+        
+        input(type="password", id="signinPass", name="signin[pass_client]", placeholder="Confirmez le mot de passe")
+
+        input(type="submit", value="Valider", id="submitButton")
+
+script.
+    $.ajax({
+        data: { value: $('#signinMail').val() },
+        method: "POST",
+        success: (data) => {
+            console.log(data)
+        }
+    });

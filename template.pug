@@ -10,10 +10,16 @@ html
                 include assets/css/signinStyle.pug
             when 'signedin'
                 include assets/css/signedinStyle.pug
+            when 'signup'
+                include assets/css/signupStyle.pug
             when 'addbien'
                 include assets/css/addbienStyle.pug
+            when 'bien'
+                include assets/css/bienStyle.pug
             when 'contact'
                 include assets/css/contactStyle.pug
+            when 'mentions'
+                include assets/css/mentionsStyle.pug
             default
                 include assets/css/accueilStyle.pug
     include includes/header.pug
@@ -26,11 +32,17 @@ html
                 include includes/accueil.pug
             when 'signin'
                 include includes/signin.pug
+            when 'signup'
+                include includes/signup.pug
             when 'signedin'
                 include includes/signedin.pug
             when 'addbien'
                 include includes/addbien.pug
+            when 'bien'
+                include includes/bien.pug
             when 'contact'
                 include includes/contact.pug
+            when 'mentions'
+                include includes/mentions.pug
             default
                 include includes/accueil.pug

@@ -1,15 +1,22 @@
 #contactDiv{
     background-color: rgb(70, 70, 70);
-    height:10vh;
+    height:2vh;
     width:30vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
     margin-top: 35vh;
     margin-left: 25vw;
 }
 
-#mailto{
-    background-color: rgb(120, 120, 120);
-    margin-left: 6vw;
-    margin-top: 5vh !important;
+#contactDiv a{
+    margin-left: 7vw;
     color: #fff;
     text-decoration: none;
+}
+
+#contactDiv a:hover{
+    background-color: rgb(80, 80, 80);
+    border-radius: 25px;
+    transform: translateY(2px);
+    box-shadow: 0 5px rgb(50, 50, 50);
 }

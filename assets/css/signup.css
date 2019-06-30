@@ -1,0 +1,21 @@
+#signupBigDiv{
+    margin-left: 4vw;
+    margin-top: 5vw;
+    padding-top: 0.2vw;
+    padding-bottom: 2vw;
+    height: 10vh;
+    width: 45vw;
+    background-color: rgb(70, 70, 70);
+}
+
+#signupBigDiv h2{
+    margin-left: 2vw;
+}
+
+#signupBigDiv input{
+    margin-left: 2vw;
+}
+
+#signupBigDiv input:first-child{
+    margin-left: 4vw;
+}

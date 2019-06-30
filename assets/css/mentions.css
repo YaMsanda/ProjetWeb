@@ -1,0 +1,8 @@
+#mentionsBigDiv{
+    background-color: rgb(221, 221, 221);
+    padding-bottom: 2vh;
+}
+
+#mentionsBigDiv *{
+    margin-left: 1vw;
+}

@@ -20,9 +20,27 @@ app.get('/signin', function (req, res) {
     }));
 })
 
+app.get('/signup', function (req, res) {
+    res.send(pug.renderFile('template.pug', {
+        activePage: 'signup'
+    }));
+})
+
 app.get('/addbien', function (req, res) {
     res.send(pug.renderFile('template.pug', {
         activePage: 'addbien'
+    }));
+})
+
+app.get('/bien', function (req, res) {
+    res.send(pug.renderFile('template.pug', {
+        activePage: 'bien'
+    }));
+})
+
+app.get('/mentions', function (req, res) {
+    res.send(pug.renderFile('template.pug', {
+        activePage: 'mentions'
     }));
 })
 

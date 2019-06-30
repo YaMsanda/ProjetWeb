@@ -3,7 +3,7 @@
     margin-top: 6vw;
     padding-top: 0.2vw;
     padding-bottom: 2vw;
-    height: 50vh;
+    height: 65vh;
     width: 60vw;
     background-color: rgb(70, 70, 70);
 }
@@ -17,6 +17,11 @@
     margin-bottom: 2vh;
     width:20vw;
     height:3vh;
+}
+
+#addBienBigDiv textarea{
+    margin-left: 6vw;
+    margin-bottom: 2vh;
 }
 
 #addBienBigDiv input:last-child{
