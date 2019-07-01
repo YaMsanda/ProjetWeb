@@ -21,7 +21,7 @@
 }
 
 #bienBigDiv img:hover ~ #bienDetails p:nth-child(6){
-    font-size: 0.8em;
+    display: none;
 }
 
 #bienBigDiv a{
